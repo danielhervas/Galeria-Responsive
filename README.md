@@ -24,6 +24,10 @@ La página tiene un **encabezado** que contiene un ícono de cámara y un mensaj
 #### **Imágenes**
 Cada imagen de la galería se muestra utilizando la etiqueta `<picture>`, lo que permite especificar diferentes fuentes de imagen para diferentes resoluciones y tamaños de pantalla. Las imágenes son adaptadas de la siguiente manera:
 
+### Uso de Script para Generar Imágenes Responsivas
+
+Para garantizar que las imágenes se muestren correctamente en diferentes dispositivos, se ha utilizado un script en Node.js con la librería `sharp` para generar versiones de las imágenes optimizadas para distintos tamaños de pantalla y densidades de píxeles.
+
 - **Imágenes en 1x y 2x:** Se proporciona una versión de cada imagen para pantallas estándar (1x) y para pantallas de alta resolución (2x).
 - **Media Queries:** Se usan para cargar imágenes diferentes según el tamaño de la pantalla:
   - Pantallas pequeñas (máximo 500px)
@@ -35,3 +39,7 @@ Esto asegura que las imágenes se cargan de forma eficiente según las capacidad
 
 #### **Diseño Responsivo**
 El uso de **Bootstrap** junto con las clases de columna (`col-12`, `col-sm-6`, `col-md-4`, `col-lg-4`) permite que las imágenes se distribuyan en una sola columna en dispositivos pequeños y en varias columnas en pantallas más grandes.
+
+### Uso de Modal y Script para Visualización de Imágenes
+
+Para mejorar la experiencia del usuario, se ha implementado una funcionalidad que permite al usuario hacer clic en cualquier imagen de la galería y verla en grande en una ventana modal. Además, se incluye una flecha para volver a la galería.
