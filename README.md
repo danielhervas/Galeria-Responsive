@@ -6,7 +6,7 @@
 **Curso:** 2º DAW
 
 ## Descripción del Proyecto
-En este proyecto se ha creado una galería de imágenes responsiva utilizando HTML, CSS y Bootstrap. El objetivo principal es mostrar cómo se pueden adaptar las imágenes a diferentes tamaños de pantalla utilizando técnicas de diseño responsivo.
+En este proyecto se ha creado una galería de imágenes responsiva utilizando HTML, CSS, JS y Bootstrap. El objetivo principal es mostrar cómo se pueden adaptar las imágenes a diferentes tamaños de pantalla utilizando técnicas de diseño responsivo.
 
 ### Estructura del Proyecto
 
