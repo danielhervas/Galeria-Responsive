@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 5px solid #ff6f61;
+    font-family: 'Poppins', sans-serif;
+    /* Fuente para el header general */
+}
+
+header i {
+    color: #ff6f61;
+    /* Icono destacado */
+}
+
+header h1 {
+    font-size: 2.8rem;
+    /* Tamaño un poco más grande */
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    /* Fuente artística */
+}
+
+header p {
+    font-size: 1.3rem;
+    margin: 10px 0 0;
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    /* Fuente elegante y minimalista */
+    font-style: italic;
+    /* Toque sofisticado */
+}
+
+.gallery img {
+    max-width: 100%;
+    height: 500px;
+    /* Puedes ajustar la altura a lo que desees */
+    object-fit: cover;
+    /* Esto asegura que las imágenes cubran el espacio sin distorsionarse */
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    display: block; 
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Ajusta el ancho mínimo y máximo */
+    gap: 20px;
+    /* Espacio entre imágenes */
+    justify-content: center;
+    /* Centra las imágenes si el ancho total no se llena */
+    margin-bottom: 12px;
+    /* Espacio entre las filas del grid */
+    padding: 0 20px;
+    /* Espaciado lateral */
+}
+
+.image-description {
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+    padding: 0px 20px;
+    /* Espaciado lateral uniforme */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
